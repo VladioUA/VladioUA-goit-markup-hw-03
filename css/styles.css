@@ -15,6 +15,7 @@
 .list {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
 }
 .h2 {
@@ -44,7 +45,9 @@ body {
 }
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    width: 1200px;
+    padding-left: auto;
+    padding-right: auto;
 }
 .header {
     background-color: var(--background-color-clear-white);
@@ -57,7 +60,10 @@ body {
     height: 100%;
 }
 .main-menu {
-    margin-left: 68px;
+    /* margin-left: 68px; */
+    margin: 0;
+    padding-left: 68px;
+    display: flex;
 }
 .features {
     padding: 94px 0;
@@ -65,6 +71,7 @@ body {
 .features .item {
     margin-left: var(--offset-size);
     color: var(--text-black);
+    width: 270px;
 }
 .features .item:first-child {
     margin: 0;
@@ -75,12 +82,21 @@ body {
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .features .text {
     color: var(--text-gray);
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
+    margin: 0;
+}
+.features .list {
+    display: flex;
+}
+.what-we-do .container {
+    padding-bottom: 94px;
 }
 .what-we-do .item {
     margin-left: var(--offset-size);
@@ -101,7 +117,9 @@ body {
     margin-bottom: 50px;
 }
 .what-we-do .list {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    margin: 0;
 }
 .nav-address-wrap {
     margin-left: auto;
@@ -176,10 +194,13 @@ body {
     text-align: center;
 }
 .cap-content {
-    padding: 200px 0; 
+    /* padding: 200px 0;  */
+    padding-top: 200px;
+    padding-bottom: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .cap-content .btn {
     background-color: var(--background-color-blue);
@@ -202,6 +223,10 @@ body {
 .our-team .image {
  width: 100%;
 }
+.our-team .list {
+    display: flex;
+    margin: 0;
+}
 .our-team .item {
     margin-left: var(--offset-size);
     background-color: var(--background-color-clear-white);
@@ -215,12 +240,15 @@ body {
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .our-team .text {
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-gray);
+    margin: 0;
 }
 .our-team .top-title {
     font-size: 36px;
@@ -230,6 +258,11 @@ body {
     color: var(--text-black);
     margin-top: 0;
     margin-bottom: 50px;
+}
+.our-team .our-team-text {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 /* Footer */
 .footer {
@@ -259,7 +292,10 @@ body {
     border: none;
     margin-left: 8px;
 }
-
+.filters .list {
+    display: flex;
+    padding-bottom: 56px;
+}
 .filters .list:first-child {
     margin-left: 0;
 }
