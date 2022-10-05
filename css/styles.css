@@ -16,7 +16,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
 }
 .h2 {
     display: none;
@@ -53,6 +53,9 @@ body {
     background-color: var(--background-color-clear-white);
     height: 80px;
     border-bottom: 1px solid #ECECEC;
+}
+.header .list {
+    display: flex;
 }
 .header-content {
     display: flex;
@@ -294,6 +297,8 @@ body {
 }
 .filters .list {
     display: flex;
+    justify-content: center;
+    padding-top: 100px;
     padding-bottom: 56px;
 }
 .filters .list:first-child {
